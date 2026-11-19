@@ -28,6 +28,16 @@ sources:
     order: relevance            # relevance | viewCount | date
     region_code: PL
     relevance_language: pl
+  reddit:                       # collector drafted, NOT run against the live API: see docs/reddit-access.md
+    enabled: false
+    subreddits: [Polska, PolskaPolityka]
+    search_all: true              # also search all of Reddit (Polish keywords mostly hit Polish posts)
+    sort: relevance               # relevance | top | comments | new
+    max_posts_per_query: 25
+    max_posts: 120                # posts per run, round-robin across (scope, keyword) searches
+    min_comments: 3
+    max_comments_per_post: 300
+    max_depth: 8
 
 cleaning:
   min_words: 5
