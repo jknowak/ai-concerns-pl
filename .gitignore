@@ -1,0 +1,7 @@
+.env
+.venv/
+__pycache__/
+data/cache/
+data/*.npz
+data/collect2.log
+out/report.html

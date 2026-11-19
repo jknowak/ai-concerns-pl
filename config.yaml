@@ -1,0 +1,59 @@
+# Polish lay-public AI concerns miner — all tunables live here. Secrets go in .env.
+
+keywords:
+  - sztuczna inteligencja
+  - AI zagrożenia
+  - ChatGPT
+  - czy AI nas zastąpi
+  - AI praca
+  - niebezpieczeństwa sztucznej inteligencji
+  - przyszłość AI
+  - AI koniec świata
+  - AI w szkole
+  - deepfake
+  - sztuczna inteligencja w medycynie
+  - AI Polska
+
+date_range:
+  start: 2024-01-01   # inclusive
+  end: null           # null = today
+
+sources:
+  youtube:
+    enabled: true
+    max_videos: 60
+    max_search_pages_per_keyword: 1
+    max_comment_threads_per_video: 300
+    max_replies_per_thread: 50
+    order: relevance            # relevance | viewCount | date
+    region_code: PL
+    relevance_language: pl
+
+cleaning:
+  min_words: 5
+  min_polish_confidence: 0.5
+  near_dup_threshold: 0.85      # MinHash Jaccard on word 3-shingles
+
+llm:
+  classifier_model: claude-haiku-5-5
+  labeler_model: claude-opus-5-5
+  classify_batch_size: 40
+  concurrency: 6
+  budget_usd: 5.0               # abort before a stage whose estimate exceeds this, unless --yes
+
+embedding:
+  model: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+  batch_size: 64
+
+clustering:
+  target_min_clusters: 15
+  target_max_clusters: 40
+  umap_n_neighbors: 15
+  umap_n_components: 5
+  min_cluster_sizes: [5, 8, 10, 12, 15, 20, 25, 30, 40, 50, 75, 100]
+  random_state: 42
+
+report:
+  top_n_questions: 15
+  quotes_per_cluster: 4
+  sample_per_cluster_for_llm: 40

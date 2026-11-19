@@ -1,0 +1,47 @@
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 3067.72it/s]
+Batches:   0%|          | 0/44 [00:00<?, ?it/s]Batches:   2%|▏         | 1/44 [00:10<07:29, 10.44s/it]Batches:   5%|▍         | 2/44 [00:21<07:26, 10.62s/it]Batches:   7%|▋         | 3/44 [00:31<07:01, 10.29s/it]Batches:   9%|▉         | 4/44 [00:40<06:35,  9.90s/it]Batches:  11%|█▏        | 5/44 [00:49<06:18,  9.70s/it]Batches:  14%|█▎        | 6/44 [00:57<05:48,  9.16s/it]Batches:  16%|█▌        | 7/44 [01:05<05:22,  8.73s/it]Batches:  18%|█▊        | 8/44 [01:14<05:11,  8.65s/it]Batches:  20%|██        | 9/44 [01:22<04:55,  8.45s/it]Batches:  23%|██▎       | 10/44 [01:30<04:42,  8.31s/it]Batches:  25%|██▌       | 11/44 [01:38<04:31,  8.23s/it]Batches:  27%|██▋       | 12/44 [01:46<04:24,  8.26s/it]Batches:  30%|██▉       | 13/44 [01:53<04:00,  7.75s/it]Batches:  32%|███▏      | 14/44 [01:59<03:37,  7.25s/it]Batches:  34%|███▍      | 15/44 [02:05<03:18,  6.86s/it]Batches:  36%|███▋      | 16/44 [02:10<02:57,  6.33s/it]Batches:  39%|███▊      | 17/44 [02:15<02:38,  5.88s/it]Batches:  41%|████      | 18/44 [02:19<02:22,  5.46s/it]Batches:  43%|████▎     | 19/44 [02:23<02:08,  5.14s/it]Batches:  45%|████▌     | 20/44 [02:28<01:56,  4.85s/it]Batches:  48%|████▊     | 21/44 [02:32<01:47,  4.67s/it]Batches:  50%|█████     | 22/44 [02:36<01:36,  4.37s/it]Batches:  52%|█████▏    | 23/44 [02:39<01:26,  4.11s/it]Batches:  55%|█████▍    | 24/44 [02:43<01:18,  3.91s/it]Batches:  57%|█████▋    | 25/44 [02:46<01:10,  3.71s/it]Batches:  59%|█████▉    | 26/44 [02:49<01:03,  3.53s/it]Batches:  61%|██████▏   | 27/44 [02:52<00:56,  3.31s/it]Batches:  64%|██████▎   | 28/44 [02:54<00:48,  3.06s/it]Batches:  66%|██████▌   | 29/44 [02:57<00:47,  3.14s/it]Batches:  68%|██████▊   | 30/44 [03:00<00:40,  2.88s/it]Batches:  70%|███████   | 31/44 [03:02<00:35,  2.71s/it]Batches:  73%|███████▎  | 32/44 [03:04<00:30,  2.54s/it]Batches:  75%|███████▌  | 33/44 [03:06<00:25,  2.36s/it]Batches:  77%|███████▋  | 34/44 [03:08<00:22,  2.27s/it]Batches:  80%|███████▉  | 35/44 [03:10<00:19,  2.13s/it]Batches:  82%|████████▏ | 36/44 [03:12<00:15,  2.00s/it]Batches:  84%|████████▍ | 37/44 [03:14<00:13,  1.95s/it]Batches:  86%|████████▋ | 38/44 [03:15<00:11,  1.87s/it]Batches:  89%|████████▊ | 39/44 [03:17<00:09,  1.84s/it]Batches:  91%|█████████ | 40/44 [03:18<00:06,  1.74s/it]Batches:  93%|█████████▎| 41/44 [03:20<00:04,  1.60s/it]Batches:  95%|█████████▌| 42/44 [03:21<00:02,  1.44s/it]Batches:  98%|█████████▊| 43/44 [03:22<00:01,  1.32s/it]Batches: 100%|██████████| 44/44 [03:22<00:00,  1.07s/it]Batches: 100%|██████████| 44/44 [03:22<00:00,  4.61s/it]
+  min_cluster_size=   5 → 365 clusters, noise 31%
+  min_cluster_size=   8 → 195 clusters, noise 31%
+  min_cluster_size=  10 → 144 clusters, noise 37%
+  min_cluster_size=  12 →  81 clusters, noise 34%
+  min_cluster_size=  15 →  64 clusters, noise 41%
+  min_cluster_size=  20 →  43 clusters, noise 38%
+  min_cluster_size=  25 →  37 clusters, noise 43%
+  min_cluster_size=  30 →  30 clusters, noise 42%
+  min_cluster_size=  40 →   3 clusters, noise 0%
+  min_cluster_size=  50 →   3 clusters, noise 0%
+  min_cluster_size=  75 →   3 clusters, noise 8%
+  min_cluster_size= 100 →   3 clusters, noise 9%
+[cluster] N=6029 min_cluster_size=30 clusters=30 noise=42%
+[label] estimated cost ≈ $2.37 (claude-opus-5-5, ~143k in / ~90k out)
+  cluster 3: AI is just a tool that makes mistakes
+  cluster 0: AI job loss enriches corporations, impoverishes workers
+  cluster 2: Scattered sarcastic quips about AI
+  cluster 1: Mass unemployment: who will buy anything?
+  cluster 6: Fatalism: AI will doom humanity
+  cluster 4: Poland's place in the AI race
+  cluster 7: Is AI just another technological revolution?
+  cluster 5: ChatGPT relationships: attachment, sycophancy, replacing people
+  cluster 11: AI as the next stage of evolution
+  cluster 10: Humanoid robots: replacing or subjugating humans
+  cluster 8: Discrediting AI pundits' expertise and motives
+  cluster 9: AI will doom humanity — via human nature
+  cluster 12: Kids turning to AI instead of people
+  cluster 13: AI progress pace: revolution or bubble?
+  cluster 15: Can AI be conscious or have a soul?
+  cluster 14: AI replacing doctors amid healthcare frustration
+  cluster 16: Superintelligence escaping control, threatening humanity
+  cluster 18: Are LLMs just statistics or real thinking?
+  cluster 17: AI cybersecurity, sandbox escapes, data privacy
+  cluster 19: Pull the plug: shut off power/internet
+  cluster 22: Scattered conversational replies about AI
+  cluster 20: Jokes, mockery and indifference toward AI
+  cluster 23: AI as nuclear bomb: arms race, weapons
+  cluster 21: Dispute: rational fear or fearmongering
+  cluster 25: AI agents: grammar, jobs, trust
+  cluster 24: What is intelligence versus wisdom?
+  cluster 26: AI extinction, aliens, cosmic speculation
+  cluster 27: Arguments over how AI models really work
+  cluster 28: Terminator is becoming a documentary
+  cluster 29: AI as elite tool for enslaving people
+[label] labelled=30 actual_cost=$1.260
