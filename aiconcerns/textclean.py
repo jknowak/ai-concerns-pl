@@ -11,14 +11,18 @@ from lingua import Language, LanguageDetectorBuilder
 
 from .db import log
 
-_HANDLE = re.compile(r"(?<![\w.])@[\w.\-]{2,}|(?<!\w)/?u/[\w\-]{3,}", re.UNICODE)
+# YouTube plainText often renders mentions as "@x@handle"; handles may contain digits/hyphens.
+_HANDLE = re.compile(r"(?<![\w.])@+(?:\w@)?[\w.\-]{2,}|(?<!\w)/?u/[\w\-]{3,}", re.UNICODE)
+_EMAIL = re.compile(r"[\w.+\-]+@[\w\-]+\.[\w.\-]+")
 _URL = re.compile(r"https?://\S+|www\.\S+")
 _WS = re.compile(r"\s+")
 
 
 def anonymise(text: str) -> str:
     """Drop @handles / u/names and URLs; we never store who said what."""
+    text = text.replace("\u200b", " ")
     text = _URL.sub("[link]", text)
+    text = _EMAIL.sub("[email]", text)
     text = _HANDLE.sub("", text)
     return _WS.sub(" ", text).strip(" ,:")
 

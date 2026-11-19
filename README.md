@@ -88,7 +88,7 @@ Any Claude stage whose estimated cost exceeds `llm.budget_usd` (default $5) abor
 
 ## Data and privacy
 
-The texts are public YouTube comments. The repo contains the anonymised corpus (`data/corpus.sqlite`): no author names or channel IDs are stored, and the pipeline strips @handles and URLs from text. Stripping is heuristic; a small number of handle-like strings (roughly 0.2% of texts) may remain. The `parent_context` column holds the video title and channel name (public creators).
+The texts are public YouTube comments. The repo contains the anonymised corpus (`data/corpus.sqlite`): no author names or channel IDs are stored, and the pipeline strips @handles, e-mail addresses and URLs from text (heuristic regex; open an issue if you spot a leftover handle). The `parent_context` column holds the video title and channel name (public creators).
 
 Deliberately **not** committed: `data/cache/` (raw YouTube API responses, which include commenter display names and channel IDs), `data/*.npz` (regenerable embeddings), and intermediate files.
 
