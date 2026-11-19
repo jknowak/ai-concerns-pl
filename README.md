@@ -109,6 +109,8 @@ About $1.40 of Claude usage and about 600 YouTube API quota units for a 60-video
 
 Reddit, Wykop, X via xAI, Google Trends, news-site comments (where terms of service allow).
 
+**Reddit:** a collector is drafted (`aiconcerns/collectors/reddit.py`, disabled in `config.yaml`) but has not been run, because Reddit API access is currently blocked. See [docs/reddit-access.md](docs/reddit-access.md) for what was tested and the possible way forward.
+
 ## License
 
 Code: MIT, see [LICENSE](LICENSE).

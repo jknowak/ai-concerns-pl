@@ -15,9 +15,10 @@ import warnings
 warnings.filterwarnings("ignore")
 
 from aiconcerns import cluster, config, db, llm, pdf, report, textclean
-from aiconcerns.collectors import youtube
+from aiconcerns.collectors import reddit, youtube
 
-COLLECTORS = {"youtube": youtube.collect}  # build order: reddit, wykop, x, trends, news
+# reddit is drafted but disabled in config.yaml (no API access; see docs/reddit-access.md)
+COLLECTORS = {"youtube": youtube.collect, "reddit": reddit.collect}  # build order: wykop, x, trends, news
 
 
 def main():
